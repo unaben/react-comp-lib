@@ -1,4 +1,5 @@
 import React,{FC} from 'react'
+import './Button.css'
 
 interface ButtonProps{
     label:string
@@ -6,7 +7,7 @@ interface ButtonProps{
 
 const Button:FC<ButtonProps> = ({label}) => {
   return (
-    <button>{label}</button>
+    <button className='button'>{label}</button>
   )
 }
 
